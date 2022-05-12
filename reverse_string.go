@@ -8,6 +8,7 @@ import (
 func ReverseString(input string) (output string) {
 	var res strings.Builder
 	input = emoji.Sprint(input)
+	input = strings.TrimSpace(input)
 	inputLen := len(input)
 	resRunes := make([]rune, inputLen)
 
