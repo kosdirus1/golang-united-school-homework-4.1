@@ -1,9 +1,13 @@
 package reverse_string
 
-import "strings"
+import (
+	"github.com/kyokomi/emoji/v2"
+	"strings"
+)
 
 func ReverseString(input string) (output string) {
 	var res strings.Builder
+	input = emoji.Sprint(input)
 	inputLen := len(input)
 	resRunes := make([]rune, inputLen)
 
